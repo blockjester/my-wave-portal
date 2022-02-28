@@ -1,0 +1,30 @@
+{
+  "name": "my-wave-portal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "npx hardhat clean",
+    "compile": "npx hardhat compile",
+    "console": "npx hardhat console",
+    "node": "npx hardhat node",
+    "rinkeby": "npx hardhat run scripts/deploy.js --network rinkeby",
+    "cp": "cp ./artifacts/contracts/WavePortal.sol/WavePortal.json ../waveportal-starter-project/src/utils",
+    "script": "npx hardhat run scripts/run.js",
+    "test": "npx hardhat test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.2",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.4",
+    "hardhat": "^2.8.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}
